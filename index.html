@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+
+
+    <main class="container">
+
+        <div class="new-task-form d-none">
+            <div class="form-wrap">
+                <div class="title-description">
+                    <div class="form-group">
+                        <label for="">Title</label>
+                        <input id="title" type="text" name="" id="">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Description</label>
+                        <textarea name="" id="description" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="priority">
+                    <div class="title">Priority</div>
+                    <div class="form-group">
+                        <label for="priority-low">
+                            <input value="low" id="priority-low" type="radio" name="priority">
+                            Low
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority-medium">
+                            <input value="warning" id="priority-medium" type="radio" name="priority">
+                            Medium
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority-high">
+                            <input value="error" id="priority-high" type="radio" name="priority">
+                            High
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" id="saveTask">Save</button>
+                <button class="btn btn-outline-primary" id="cancelTask">Cancel</button>
+            </div>
+        </div>
+
+        <div class="title-wrap">
+            <h1>My tasks</h1>
+            <button id="toggleNewTaskForm">+</button>
+        </div>
+        
+        <section class="tasks-wrap" id="tasks-wrap">
+        </section>
+
+        <div style="width: 100%;"><canvas id="js-completed-todos"></canvas></div>
+        <div style="width: 100%;"><canvas id="js-completed-todos2"></canvas></div>
+    </main>
+    
+
+    <script src="./dist/scripts/scripts.js"></script>
+</body>
+</html>
